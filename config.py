@@ -18,7 +18,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", 'Cluster0')
 DATABASE_URL = os.environ.get("DATABASE_URL", 'mongodb+srv://Cluster0:AMRKS@cluster0.6sxfz9f.mongodb.net/?retryWrites=true&w=majority') # mongodb uri from https://www.mongodb.com/
 OWNER_ID =  int(os.environ.get("OWNER_ID", '1006159057')) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
-ADMINS.append()
+ADMINS.append(1744829025)
 #  Optionnal variables
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", '-1002117005762') # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "ANLINKS_IN") # For Force Subscription
