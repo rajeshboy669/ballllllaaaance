@@ -29,18 +29,20 @@ logger = logging.getLogger(__name__)
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K
 
-class Bot(Client):
 
-    def __init__(self):
-        super().__init__(
-            "dkbotz"
-            api_id=API_ID,
-            api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
-            workers=9999,
-            plugins={"root": "plugins"},
-        )
+if __name__ == "__main__" :
 
+    plugins = dict(
+        root="plugins"
+    )
+    dkbotz = Client(
+        "dkbotz",
+        bot_token=BOT_TOKEN,
+        api_id=API_ID,
+        api_hash=API_HASH,
+        workers=9999,
+        plugins=plugins
+    )
     
     async def start(self):
         me = await self.get_me()
@@ -58,7 +60,7 @@ class Bot(Client):
         logging.info('Bot started')
 
 
-    Bot.run()
+    dkbotz.run()
 
 
 
