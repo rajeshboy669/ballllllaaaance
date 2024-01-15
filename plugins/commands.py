@@ -27,8 +27,10 @@ async def startcmdssss_by_dkbotz(c, m:Message):
 
     NEW_USER_REPLY_MARKUP = [
                 [
-                    InlineKeyboardButton('Ban', callback_data=f'ban#{m.from_user.id}'),
-                    InlineKeyboardButton('Close', callback_data='delete'),
+                    InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+                    InlineKeyboardButton("Support 🤝", callback_data="about_command"),
+                ],[
+                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="method_command")
                 ]
             ]
     is_user = await is_user_exist(m.from_user.id)
