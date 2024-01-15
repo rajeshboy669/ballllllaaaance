@@ -30,7 +30,7 @@ async def startcmdssss_by_dkbotz(c, m:Message):
                     InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
                     InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
                 ],[
-                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="dkbotz_balance")
+                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
                 ]
             ]
     is_user = await is_user_exist(m.from_user.id)
