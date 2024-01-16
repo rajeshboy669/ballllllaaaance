@@ -4,9 +4,12 @@ from config import *
 
 
 SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('📡 Connect To Bot', url=f"https://{SHORTNER_LINK}/member/tools/api?bot=true")
-    ]
+    [[
+        InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+        ],[
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+    ]]
 ])
 
 
@@ -35,24 +38,18 @@ Total Balance - {tbalance}
 
 '''
 
-START_MESSAGE = '''**Hello, {user}
-I Am {site} , Bulk Link Converter. I Can Convert Links Directly From Your {site} Account,
-    
-1. Go To 👉 https://{site}/member/tools/api 
+START_MESSAGE = '''Hi there {user}, I am a Bulk Link Converter for Anlinks.in. I Can Convert Links Directly From Your Anlinks.in Account
 
-2. Than Copy API Key
+1. Go To 👉 https://Anlinks.in/member/tools/api
+2. Then Copy API Key
+3. Then Type /api than give a single space and then paste your API Key (see example to understand more...)
 
-3. Than Type /set_api than give a single space and than paste your API Key (see example to understand more...)
-
-/set_api(space)API Key 
 (See Example.👇)
-Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
+Example:
+/api 1234567890abcdef1234567890abcdef12345678
 
-**💁‍♀️ Hit 👉 /help To Get Help.
 
-➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
-
-➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
+⭐️ If you need any help or Support Contact Us at @TGButterfly
 '''
 
 HELP_MESSAGE = '''
@@ -99,7 +96,8 @@ List of Admins who has access to this Bot
 
 
 HELP_REPLY_MARKUP = InlineKeyboardMarkup([
-    [        
+    [ 
+        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api"),
         InlineKeyboardButton('⏪ Back', callback_data='start_dkbotz')
     ],
 ])
