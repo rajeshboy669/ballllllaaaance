@@ -43,15 +43,7 @@ async def startcmdssss_by_dkbotz(c, m:Message):
 
     t = START_MESSAGE.format(user=m.from_user.mention, method=new_user["method"], site=new_user["base_site"])
     await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
-
-@Client.on_message(filters.command('help') & filters.private)
-async def help_command_by_dkbotz(c, m: Message):
-    s = HELP_MESSAGE.format(
-                firstname=temp.FIRST_NAME,
-                username=temp.BOT_USERNAME)
-
-    await m.reply_text(s, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
-
+l
 
 @Client.on_message(filters.command('features') & filters.private)
 async def features_command_by_dkbotz(c, m: Message):
@@ -83,15 +75,6 @@ async def balance_command_by_dkbotz(c, m: Message):
             await m.reply_text(f"Your Account is Banned")
     except Exception as e:
         await m.reply_text(e)
-
-@Client.on_message(filters.command('about'))
-async def about_command(c, m: Message):
-    reply_markup=BACK_REPLY_MARKUP
-
-    bot = await c.get_me()
-    if WELCOME_IMAGE:
-        return await m.reply_photo(photo=WELCOME_IMAGE, caption=ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=reply_markup)
-    await m.reply_text(ABOUT_TEXT.format(bot.mention(style='md')),reply_markup=reply_markup , disable_web_page_preview=True)
 
 
 @Client.on_message(filters.command('set_api') & filters.private)
