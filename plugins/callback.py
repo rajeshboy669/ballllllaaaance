@@ -149,11 +149,11 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
     if query.data == 'delete':
         await query.message.delete()
     elif query.data == 'help_dkbotz':
-        await query.message.edit(HELP_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
+        await query.message.edit(HELP_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), reply_markup=ABOUT_REPLY_MARKUP, disable_web_page_preview=True)
 
     elif query.data == 'about_dkbotz':
         bot = await bot.get_me()
-        await query.message.edit(ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=ABOUT_REPLY_MARKUP, disable_web_page_preview=True)
+        await query.message.edit(ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
 
     elif query.data == 'start_dkbotz':
         new_user = await get_user(query.from_user.id)
