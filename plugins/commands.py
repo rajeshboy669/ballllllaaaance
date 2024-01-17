@@ -19,7 +19,17 @@ from bot import *
 logger = logging.getLogger(__name__)
 
 
+keyboard = [
+    [
+        InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+    ],
+    [
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+    ]
+]
 
+R_REPLY_MARKUP = InlineKeyboardMarkup(keyboard)
 
 
 @Client.on_message(filters.command('start'))
@@ -32,13 +42,7 @@ async def startcmdssss_by_dkbotz(c, m:Message):
     new_user = await get_user(m.from_user.id)  
 
     t = START_MESSAGE.format(user=m.from_user.mention, method=new_user["method"], site=new_user["base_site"])
-    if WELCOME_IMAGE:
-        return await m.reply_photo(photo=WELCOME_IMAGE, caption=t, reply_markup=R_REPLY_MARKUP)
-
-    if SIMPLE_MODE:
-        await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
-    else:
-        await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
+    await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help') & filters.private)
 async def help_command_by_dkbotz(c, m: Message):
