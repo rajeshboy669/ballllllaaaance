@@ -21,6 +21,17 @@ from bot import *
 
 logger = logging.getLogger(__name__)
 
+keyboard = [
+    [
+        InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+    ],
+    [
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+    ]
+]
+
+R_REPLY_MARKUP = InlineKeyboardMarkup(keyboard)
 
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
 async def dkbotz_settingsbyshoirt(c:Client,m: CallbackQuery):
@@ -145,19 +156,14 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
     elif query.data == 'start_dkbotz':
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
-        if SIMPLE_MODE:
-            await m.reply_text(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
-        else:
-            await query.message.edit(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
+        await m.reply_text(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
     elif query.data == 'new_btn_dkbotz':
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
-
         await query.message.edit(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
     elif query.data == 'old_btn_dkbotz':
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
-
         await query.message.edit(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
 
     elif query.data == 'alias_conf':
