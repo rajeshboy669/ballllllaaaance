@@ -12,7 +12,14 @@ SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
     ]]
 ])
 
-
+R_REPLY_MARKUP = InlineKeyboardMarkup([
+      [[
+            InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+            InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+        ],[
+            InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+     ]]
+])
 
 BALANCE_TEXT = '''Your Details
 
