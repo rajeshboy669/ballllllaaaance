@@ -52,11 +52,7 @@ Example:
 '''
 
 HELP_MESSAGE = '''
-☝️ SEND YOUR API TOKEN TO ME.
-
-Click On The Button Below
-Copy Api Token From Website
-Paste & Send Token To Me.'''
+Any Problem Please Contact Me 👉 @Anlinks_in_support'''
 
 
 FEATURES_MESSAGE = '''
@@ -74,7 +70,11 @@ Available commands:
 - /features - Get Features Info**'''
 
 ABOUT_TEXT = """
-Any Problem Please Contact Me 👉 @TgButterfly
+☝️ SEND YOUR API TOKEN TO ME.
+
+Click On The Button Below
+Copy Api Token From Website
+Paste & Send Token To Me.
 """
 
 
