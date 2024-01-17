@@ -24,14 +24,16 @@ logger = logging.getLogger(__name__)
 keyboard = [
     [
         InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+        InlineKeyboardButton("Support 🤝", callback_data="about_dkbotz"),
     ],
     [
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="help_dkbotz")
     ]
 ]
 
 R_REPLY_MARKUP = InlineKeyboardMarkup(keyboard)
+
+ABOUT_TEXT = """Any Problem Please Contact Me 👉 @TgButterfly """
 
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
 async def dkbotz_settingsbyshoirt(c:Client,m: CallbackQuery):
