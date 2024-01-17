@@ -143,14 +143,6 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
         await query.message.edit(ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=ABOUT_REPLY_MARKUP, disable_web_page_preview=True)
 
     elif query.data == 'start_dkbotz':
-        R_REPLY_MARKUP = [
-                [
-                    InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-                    InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
-                ],[
-                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
-                ]
-        ]
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
         if SIMPLE_MODE:
@@ -158,27 +150,11 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
         else:
             await query.message.edit(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
     elif query.data == 'new_btn_dkbotz':
-        R_REPLY_MARKUP = [
-                [
-                    InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-                    InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
-                ],[
-                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
-                ]
-        ]
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
 
         await query.message.edit(tit, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
     elif query.data == 'old_btn_dkbotz':
-        R_REPLY_MARKUP = [
-                [
-                    InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-                    InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
-                ],[
-                    InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
-                ]
-        ]
         new_user = await get_user(query.from_user.id)
         tit = START_MESSAGE.format(user=query.from_user.mention, method=new_user["method"], site=new_user["base_site"])
 
