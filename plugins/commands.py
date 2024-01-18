@@ -22,10 +22,10 @@ logger = logging.getLogger(__name__)
 keyboard = [
     [
         InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+        InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
     ],
     [
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
     ]
 ]
 
