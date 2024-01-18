@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 keyboard = [
     [
         InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-        InlineKeyboardButton("Support 🤝", callback_data="help_dkbotz"),
+        InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
     ],
     [
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="about_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
     ]
 ]
 
@@ -160,12 +160,12 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
     user = await get_user(user_id)
     if query.data == 'delete':
         await query.message.delete()
-    elif query.data == 'help_dkbotz':
-        await query.message.edit(HELP_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), reply_markup=ABOUT_REPLY_MARKUP, disable_web_page_preview=True)
+    elif query.data == 'support_dkbotz':
+        await query.message.edit(SUPPORT_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), reply_markup=ABOUT_REPLY_MARKUP, disable_web_page_preview=True)
 
-    elif query.data == 'about_dkbotz':
+    elif query.data == 'connect_dkbotz':
         bot = await bot.get_me()
-        await query.message.edit(ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
+        await query.message.edit(CONNECT_TEXT.format(bot.mention(style='md')), reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
 
     elif query.data == 'start_dkbotz':
         new_user = await get_user(query.from_user.id)
