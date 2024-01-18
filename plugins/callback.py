@@ -33,8 +33,6 @@ keyboard = [
 
 R_REPLY_MARKUP = InlineKeyboardMarkup(keyboard)
 
-ABOUT_TEXT = """Any Problem Please Contact Me 👉 @TgButterfly """
-
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
 async def dkbotz_settingsbyshoirt(c:Client,m: CallbackQuery):
     try:
