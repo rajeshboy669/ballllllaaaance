@@ -54,21 +54,6 @@ Example:
 SUPPORT_MESSAGE = '''
 Any Problem Please Contact Me 👉 @Anlinks_in_support'''
 
-
-FEATURES_MESSAGE = '''
-**Hey! My name is {firstname}. I am a {username}.
-
-Available commands:
-
-- /set_api - Use This Cmd To Add API
-- /header - Set Header Text
-- /footer - Set Footer Text
-- /username - Set Username
-- /banner_image - Set A Banner For Post
-- /me - Your Settings Details
-- /balance - Get Your Balance Info
-- /features - Get Features Info**'''
-
 CONNECT_TEXT = """
 ☝️ SEND YOUR API TOKEN TO ME.
 
