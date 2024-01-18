@@ -25,6 +25,7 @@ ft = f"Due To Overload Only Channel Sub Are Use This Bot Join @DKBOTZ."
 async def private_link_handler(c: Client, message: Message):
 
     try:
+        if message.text.startswith("/"): return
         Fsub = await force_sub(c, message, channel, ft)
         if Fsub == True:
             return
