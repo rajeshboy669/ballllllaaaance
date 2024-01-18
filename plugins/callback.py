@@ -27,7 +27,7 @@ keyboard = [
         InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
     ],
     [
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", url=f"https://Anlinks.in/member/tools/api")
     ]
 ]
 
@@ -38,13 +38,6 @@ ABOUT_TEXT = """☝️ SEND YOUR API TOKEN TO ME.
 Click On The Button Below
 Copy Api Token From Website
 Paste & Send Token To Me."""
-
-ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton("⏪ Back", callback_data="start_dkbotz"),
-    ],
-])
-
 
 
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
@@ -161,11 +154,11 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
     if query.data == 'delete':
         await query.message.delete()
     elif query.data == 'support_dkbotz':
-        await query.message.edit(SUPPORT_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), reply_markup=SUPPORT_REPLY_MARKUP, disable_web_page_preview=True)
+        await query.message.edit(SUPPORT_MESSAGE.format(firstname=temp.FIRST_NAME, username=temp.BOT_USERNAME), disable_web_page_preview=True)
 
     elif query.data == 'connect_dkbotz':
         bot = await bot.get_me()
-        await query.message.edit(CONNECT_TEXT.format(bot.mention(style='md')), reply_markup=CONNECT_REPLY_MARKUP, disable_web_page_preview=True)
+        await query.message.edit(CONNECT_TEXT.format(bot.mention(style='md')), disable_web_page_preview=True)
 
     elif query.data == 'start_dkbotz':
         new_user = await get_user(query.from_user.id)
