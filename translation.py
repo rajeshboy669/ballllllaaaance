@@ -96,6 +96,7 @@ List of Admins who has access to this Bot
 
 HELP_REPLY_MARKUP = InlineKeyboardMarkup([
     [ 
+        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api"),
         InlineKeyboardButton('⏪ Back', callback_data='help_dkbotz')
     ],
 ])
@@ -103,7 +104,6 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 
 ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api"),
         InlineKeyboardButton("⏪ Back", callback_data="start_dkbotz"),
     ],
 ])
