@@ -43,7 +43,6 @@ async def startcmdssss_by_dkbotz(c, m:Message):
 
     t = START_MESSAGE.format(user=m.from_user.mention, method=new_user["method"], site=new_user["base_site"])
     await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
-l
 
 @Client.on_message(filters.command('features') & filters.private)
 async def features_command_by_dkbotz(c, m: Message):
