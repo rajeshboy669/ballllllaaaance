@@ -6,9 +6,9 @@ from config import *
 SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
     [[
         InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
-        InlineKeyboardButton("Support 🤝", callback_data="about_dkbotz"),
+        InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
         ],[
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="help_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
     ]]
 ])
 
@@ -51,7 +51,7 @@ Example:
 ⭐️ If you need any help or Support Contact Us at @TGButterfly
 '''
 
-HELP_MESSAGE = '''
+SUPPORT_MESSAGE = '''
 Any Problem Please Contact Me 👉 @Anlinks_in_support'''
 
 
@@ -69,7 +69,7 @@ Available commands:
 - /balance - Get Your Balance Info
 - /features - Get Features Info**'''
 
-ABOUT_TEXT = """
+CONNECT_TEXT = """
 ☝️ SEND YOUR API TOKEN TO ME.
 
 Click On The Button Below
@@ -94,7 +94,7 @@ List of Admins who has access to this Bot
 
 
 
-HELP_REPLY_MARKUP = InlineKeyboardMarkup([
+CONNECT_REPLY_MARKUP = InlineKeyboardMarkup([
     [ 
         InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api"),
         InlineKeyboardButton('⏪ Back', callback_data='help_dkbotz')
@@ -102,7 +102,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 
-ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
+SUPPORT_REPLY_MARKUP = InlineKeyboardMarkup([
     [
         InlineKeyboardButton("⏪ Back", callback_data="start_dkbotz"),
     ],
