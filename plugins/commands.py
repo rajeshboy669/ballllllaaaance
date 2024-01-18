@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 keyboard = [
     [
-        InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
+        InlineKeyboardButton("Update Channel", url="https://t.me/Anlinks_in"),
         InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
     ],
     [
