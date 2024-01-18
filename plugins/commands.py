@@ -25,7 +25,7 @@ keyboard = [
         InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
     ],
     [
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", url=f"https://Anlinks.in/member/tools/api")
     ]
 ]
 
