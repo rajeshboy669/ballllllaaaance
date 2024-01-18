@@ -33,6 +33,13 @@ keyboard = [
 
 R_REPLY_MARKUP = InlineKeyboardMarkup(keyboard)
 
+ABOUT_TEXT = """☝️ SEND YOUR API TOKEN TO ME.
+
+Click On The Button Below
+Copy Api Token From Website
+Paste & Send Token To Me."""
+
+
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
 async def dkbotz_settingsbyshoirt(c:Client,m: CallbackQuery):
     try:
