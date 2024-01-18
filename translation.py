@@ -8,7 +8,7 @@ SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
         InlineKeyboardButton("Update Channel", url="https://t.me/good_nation"),
         InlineKeyboardButton("Support 🤝", callback_data="support_dkbotz"),
         ],[
-        InlineKeyboardButton("Connect To Anlinks🛠️", callback_data="connect_dkbotz")
+        InlineKeyboardButton("Connect To Anlinks🛠️", url=f"https://Anlinks.in/member/tools/api")
     ]]
 ])
 
@@ -48,7 +48,7 @@ Example:
 /api 1234567890abcdef1234567890abcdef12345678
 
 
-⭐️ If you need any help or Support Contact Us at @TGButterfly
+⭐️ If you need any help or Support Contact Us at @AnLinks_in_support
 '''
 
 SUPPORT_MESSAGE = '''
@@ -81,8 +81,7 @@ List of Admins who has access to this Bot
 
 CONNECT_REPLY_MARKUP = InlineKeyboardMarkup([
     [ 
-        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api"),
-        InlineKeyboardButton('⏪ Back', callback_data='help_dkbotz')
+        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api")
     ],
 ])
 
