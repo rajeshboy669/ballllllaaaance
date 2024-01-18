@@ -44,7 +44,7 @@ async def startcmdssss_by_dkbotz(c, m:Message):
     t = START_MESSAGE.format(user=m.from_user.mention, method=new_user["method"], site=new_user["base_site"])
     await m.reply_text(t, reply_markup=R_REPLY_MARKUP, disable_web_page_preview=True)
 
-@Client.on_message(filters.command('features') & filters.private)
+#@Client.on_message(filters.command('features') & filters.private)
 async def features_command_by_dkbotz(c, m: Message):
     s = FEATURES_MESSAGE.format(
                 firstname=temp.FIRST_NAME,
@@ -52,7 +52,7 @@ async def features_command_by_dkbotz(c, m: Message):
 
     await m.reply_text(s, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
     
-@Client.on_message(filters.command(['balance', 'earnings', 'account']) & filters.private)
+#@Client.on_message(filters.command(['balance', 'earnings', 'account']) & filters.private)
 async def balance_command_by_dkbotz(c, m: Message):
     try:
         user = await get_user(m.from_user.id)
@@ -76,7 +76,7 @@ async def balance_command_by_dkbotz(c, m: Message):
         await m.reply_text(e)
 
 
-@Client.on_message(filters.command('set_api') & filters.private)
+@Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(bot, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
@@ -166,7 +166,7 @@ async def banner_image_handler(bot, m: Message):
                 return await m.reply_text("Image URL is Invalid")
 
 
-@Client.on_message(filters.command('me') & filters.private)
+#@Client.on_message(filters.command('me') & filters.private)
 async def me_handler(bot, m:Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
