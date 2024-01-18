@@ -39,6 +39,13 @@ Click On The Button Below
 Copy Api Token From Website
 Paste & Send Token To Me."""
 
+ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton("⏪ Back", callback_data="start_dkbotz"),
+    ],
+])
+
+
 
 @Client.on_callback_query(filters.regex(r"^dkbotz_settings"))
 async def dkbotz_settingsbyshoirt(c:Client,m: CallbackQuery):
