@@ -70,7 +70,7 @@ Helpful commands:
 
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
-If You Have Any Problem Then Contact - @DKBOTZHELP_2
+If You Have Any Problem Then Contact - @AnLinks_in_support
 
 Available commands:
 
@@ -109,11 +109,11 @@ ABOUT_TEXT = """
 
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-`👨‍💻 Developer:` [Anonymous](t.me/DKBOTZHELP_2)
+`👨‍💻 Developer:` [Anonymous](https://t.me/Anlinks_in_support)
 
-`📢 Support:` [Anonymous](https://t.me/DKBOTZ)
+`📢 Support:` [Anonymous](https://t.me/ANLINKS_IN)
 
-`🌐 Source Code:` **[Click Here](https://t.me/DKBOTZHELP_2)**
+`🌐 Source Code:` **[Click Here](https://t.me/Anlinks_in_support)**
 """
 
 
