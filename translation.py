@@ -4,13 +4,11 @@ from config import *
 
 
 SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
-    [[
-        InlineKeyboardButton("Update Channel", url="https://t.me/ANLINKS_IN"),
-        InlineKeyboardButton("Support 🤝", url="https://t.me/Anlinks_in_support"),
-        ],[
-        InlineKeyboardButton("Connect To Anlinks🛠️", url=f"https://Anlinks.in/member/tools/api")
-    ]]
+    [
+        InlineKeyboardButton('📡 Connect To Bot', url=f"https://{SHORTNER_LINK}/member/tools/api?bot=true")
+    ]
 ])
+
 
 
 BALANCE_TEXT = '''Your Details
@@ -37,29 +35,85 @@ Total Balance - {tbalance}
 
 '''
 
-START_MESSAGE = '''Hi there {user}, I am a Bulk Link Converter for Anlinks.in. I Can Convert Links Directly From Your Anlinks.in Account
+START_MESSAGE = '''**Hello, {user}
+I Am {site} , Bulk Link Converter. I Can Convert Links Directly From Your {site} Account,
+    
+1. Go To 👉 https://{site}/member/tools/api 
 
-1. Go To 👉 https://Anlinks.in/member/tools/api
-2. Then Copy API Key
-3. Then Type /api than give a single space and then paste your API Key (see example to understand more...)
+2. Than Copy API Key
 
+3. Than Type /set_api than give a single space and than paste your API Key (see example to understand more...)
+
+/set_api(space)API Key 
 (See Example.👇)
-Example:
-/api 1234567890abcdef1234567890abcdef12345678
+Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
+**💁‍♀️ Hit 👉 /help To Get Help.
 
-⭐️ If you need any help or Support Contact Us at @AnLinks_in_support
+➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
+
+➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
 '''
 
-SUPPORT_MESSAGE = '''
-Any Problem Please Contact Me 👉 @Anlinks_in_support'''
+HELP_MESSAGE = '''
+**Hey! My name is {firstname}. I am a {username}.**
 
-CONNECT_TEXT = """
-☝️ SEND YOUR API TOKEN TO ME.
+Features 
 
-Click On The Button Below
-Copy Api Token From Website
-Paste & Send Token To Me.
+- [Hyperlink](https://t.me/{username})
+- Buttons convert support
+- Header and Footer Text support
+- Replace Username
+- Banner Image
+
+Helpful commands:
+
+- /start: Starts me! You've probably already used this.
+- /help: Sends this message; I'll tell you more about myself!
+If You Have Any Problem Then Contact - @DKBOTZHELP_2
+
+Available commands:
+
+- /set_api - Use This Cmd To Add API
+- /header - Set Header Text
+- /footer - Set Footer Text
+- /username - Set Username
+- /banner_image - Set A Banner For Post
+- /me - Your Settings Details
+- /balance - Get Your Balance Info
+- /features - Get Features Info
+
+Use the commands to know more about the same
+Below are some features I provide'''
+
+
+FEATURES_MESSAGE = '''
+**Hey! My name is {firstname}. I am a {username}.
+
+Available commands:
+
+- /set_api - Use This Cmd To Add API
+- /header - Set Header Text
+- /footer - Set Footer Text
+- /username - Set Username
+- /banner_image - Set A Banner For Post
+- /me - Your Settings Details
+- /balance - Get Your Balance Info
+- /features - Get Features Info**'''
+
+ABOUT_TEXT = """
+**My Details:**
+`🤖 Name:` ** {} **
+    
+`📝 Language:` [Python 3](https://www.python.org/)
+
+`🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
+
+`👨‍💻 Developer:` [Anonymous](t.me/DKBOTZHELP_2)
+
+`📢 Support:` [Anonymous](https://t.me/DKBOTZ)
+
+`🌐 Source Code:` **[Click Here](https://t.me/DKBOTZHELP_2)**
 """
 
 
@@ -79,17 +133,34 @@ List of Admins who has access to this Bot
 
 
 
-CONNECT_REPLY_MARKUP = InlineKeyboardMarkup([
-    [ 
-        InlineKeyboardButton("GET API TOKEN 🎫", url=f"https://anlinks.in/member/tools/api")
+HELP_REPLY_MARKUP = InlineKeyboardMarkup([
+
+    [
+        InlineKeyboardButton('Custom Alias', callback_data=f'alias_conf'),
+        #InlineKeyboardButton('Admins', callback_data=f'admins_list'),    Not Required Because Users Can See Admin Of Bot
     ],
+
+    [
+        
+        InlineKeyboardButton('Home', callback_data='start_dkbotz')
+        
+    ],
+
+
 ])
 
 
-SUPPORT_REPLY_MARKUP = InlineKeyboardMarkup([
+ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("⏪ Back", callback_data="start_dkbotz"),
+        InlineKeyboardButton('Home', callback_data=f'start_dkbotz'),
+        InlineKeyboardButton('Help', callback_data=f'help_dkbotz')
     ],
+    [
+        InlineKeyboardButton('💵 Balance', callback_data='dkbotz_balance')
+    ],
+    [
+        InlineKeyboardButton('❌ Close', callback_data='delete')
+    ]
 ])
 
 
