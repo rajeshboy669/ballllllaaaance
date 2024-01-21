@@ -47,7 +47,7 @@ I Am {site} , Bulk Link Converter. I Can Convert Links Directly From Your {site}
 (See Example.👇)
 Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
-⭐️ If you need any help or Support Contact Us at @AnLinks_in_support
+⭐️ If you need any help or Support Contact Us at @AnLinks_in_support '''
 
 HELP_MESSAGE = '''
 **Hey! My name is {firstname}. I am a {username}.**
