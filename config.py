@@ -14,7 +14,7 @@ API_HASH = os.environ.get("API_HASH", '1252ffe16baf341bfd7236f92df76b0e') #API H
 BOT_TOKEN = os.environ.get("BOT_TOKEN", '6735390787:AAFgC8A7BloHiOSAJWcj8uyQJi-f_BRdlhU') # Bot token from @BotFather
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 ADMIN = ADMINS
-DATABASE_NAME = os.environ.get("DATABASE_NAME", 'Cluster0')
+DATABASE_NAME = os.environ.get("DATABASE_NAME", 'Anlinks')
 DATABASE_URL = os.environ.get("DATABASE_URL", 'mongodb+srv://Cluster0:AMRKS@cluster0.6sxfz9f.mongodb.net/?retryWrites=true&w=majority') # mongodb uri from https://www.mongodb.com/
 OWNER_ID =  int(os.environ.get("OWNER_ID", '1006159057')) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
