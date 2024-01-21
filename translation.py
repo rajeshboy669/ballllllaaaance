@@ -44,16 +44,10 @@ I Am {site} , Bulk Link Converter. I Can Convert Links Directly From Your {site}
 
 3. Than Type /set_api than give a single space and than paste your API Key (see example to understand more...)
 
-/set_api(space)API Key 
 (See Example.👇)
 Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
-**💁‍♀️ Hit 👉 /help To Get Help.
-
-➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
-
-➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
-'''
+⭐️ If you need any help or Support Contact Us at @AnLinks_in_support
 
 HELP_MESSAGE = '''
 **Hey! My name is {firstname}. I am a {username}.**
