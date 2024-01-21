@@ -5,7 +5,7 @@ from config import *
 
 SIMPLE_START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('📡 Connect To Bot', url=f"https://{SHORTNER_LINK}/member/tools/api?bot=true")
+        InlineKeyboardButton('📡 Connect To Anlinks ', url=f"https://{SHORTNER_LINK}/member/tools/api?bot=true")
     ]
 ])
 
