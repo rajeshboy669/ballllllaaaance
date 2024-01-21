@@ -51,51 +51,8 @@ Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
 """
 
-HELP_MESSAGE = '''
-**Hey! My name is {firstname}. I am a {username}.**
-
-Features 
-
-- [Hyperlink](https://t.me/{username})
-- Buttons convert support
-- Header and Footer Text support
-- Replace Username
-- Banner Image
-
-Helpful commands:
-
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-If You Have Any Problem Then Contact - @AnLinks_in_support
 
 Available commands:
-
-- /set_api - Use This Cmd To Add API
-- /header - Set Header Text
-- /footer - Set Footer Text
-- /username - Set Username
-- /banner_image - Set A Banner For Post
-- /me - Your Settings Details
-- /balance - Get Your Balance Info
-- /features - Get Features Info
-
-Use the commands to know more about the same
-Below are some features I provide'''
-
-
-FEATURES_MESSAGE = '''
-**Hey! My name is {firstname}. I am a {username}.
-
-Available commands:
-
-- /set_api - Use This Cmd To Add API
-- /header - Set Header Text
-- /footer - Set Footer Text
-- /username - Set Username
-- /banner_image - Set A Banner For Post
-- /me - Your Settings Details
-- /balance - Get Your Balance Info
-- /features - Get Features Info**'''
 
 ABOUT_TEXT = """
 **My Details:**
