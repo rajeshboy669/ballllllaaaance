@@ -10,7 +10,6 @@ from database.users import *
 from pyrogram import *
 from pyrogram.types import *
 from bot import *
-from pyshortner import main 
 from pyrogram.errors.exceptions.bad_request_400 import *
 
 
