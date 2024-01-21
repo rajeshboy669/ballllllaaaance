@@ -49,7 +49,7 @@ Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
 ⭐️ If you need any help or Support Contact Us at @AnLinks_in_support 
 
-"""
+'''
 
 
 Available commands:
@@ -190,4 +190,4 @@ Usage: `/unban [User ID]`
 
 List of users that are banned:
 
-{users} """
+{users}`"""
