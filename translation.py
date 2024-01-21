@@ -190,5 +190,4 @@ Usage: `/unban [User ID]`
 
 List of users that are banned:
 
-{users}
-"""
+{users} """
