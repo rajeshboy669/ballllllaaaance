@@ -38,15 +38,15 @@ Total Balance - {tbalance}
 START_MESSAGE = '''**Hello, {user}
 I Am {site} , Bulk Link Converter. I Can Convert Links Directly From Your {site} Account,
     
-1. Go To 👉 https://{site}/member/tools/api 
+1. Go To 👉 https://Anlinks.in/member/tools/api 
 
 2. Than Copy API Key
 
-3. Than Type /set_api than give a single space and than paste your API Key (see example to understand more...)
+3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
 
 
 (See Example.👇)
-Example:** `/set_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
+Example:** `/api cbd63775f798fe0e58c67a56e6ce8b70c495cda4 `
 
 ** ⭐️ If you need any help or Support Contact Us at @AnLinks_in_support.**
 '''
@@ -88,7 +88,7 @@ FEATURES_MESSAGE = '''
 
 Available commands:
 
-- /set_api - Use This Cmd To Add API
+- /api - Use This Cmd To Add API
 - /header - Set Header Text
 - /footer - Set Footer Text
 - /username - Set Username
