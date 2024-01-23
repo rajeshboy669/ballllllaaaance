@@ -14,11 +14,11 @@ API_HASH = os.environ.get("API_HASH", '1252ffe16baf341bfd7236f92df76b0e') #API H
 BOT_TOKEN = os.environ.get("BOT_TOKEN", '6735390787:AAFgC8A7BloHiOSAJWcj8uyQJi-f_BRdlhU') # Bot token from @BotFather
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 ADMIN = ADMINS
-DATABASE_NAME = os.environ.get("DATABASE_NAME", 'cluster')
+DATABASE_NAME = os.environ.get("DATABASE_NAME", 'cluster0')
 DATABASE_URL = os.environ.get("DATABASE_URL", 'mongodb+srv://Cluster0:AMRKS@cluster0.6sxfz9f.mongodb.net/?retryWrites=true&w=majority') # mongodb uri from https://www.mongodb.com/
 OWNER_ID =  int(os.environ.get("OWNER_ID", '1006159057')) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
-ADMINS.append(1744829025)
+ADMINS.append(1006159057)
 #  Optionnal variables
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", '-1002117005762') # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "ANLINKS_IN") # For Force Subscription
@@ -29,6 +29,6 @@ LINK_BYPASS = "True"
 
 # SHORTNER
 SHORT_METHOD = 1 # 2 method added 1 and 2
-SHORTNER_LINK = os.environ.get("SHORTNER_LINK", 'Anlinks.in')
+SHORTNER_LINK = os.environ.get("SHORTNER_LINK", 'anlinks.in')
 CHANNEL_LINK = os.environ.get("CHANNEL_LINK", 'https://t.me/ANLINKS_IN')
 SIMPLE_MODE = os.environ.get("SIMPLE_MODE", False)
