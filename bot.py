@@ -15,6 +15,7 @@ from database import *
 from database.users import *
 from helpers import *
 from pyshorteners import *
+from translation import *
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 import os
