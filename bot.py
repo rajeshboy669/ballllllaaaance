@@ -64,7 +64,7 @@ if __name__ == "__main__" :
     dkbotz.run()
 
 
-@dkbotz.on_message(filters.command("about"))
+@Client.on_message(filters.command("about"))
 def about(client, message):
     if message.from_user.id == ADMINS:
         text = ABOUT_TEXT.format(OWNER_NAME)
